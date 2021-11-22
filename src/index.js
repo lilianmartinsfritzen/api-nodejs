@@ -1,20 +1,18 @@
 const express = require("express");
-
 const app = express();
+const cors = require("cors")
 
-app.use(express.json())
+app.use(cors())
 
 app.listen(8080, () => console.log('Rodando na porta 8080'));
 
-// app.get("/api", (request, response) => {
-//   return response.json({ message: "Hello World!" })
-// })
+app.use(express.json())
 
-app.route("/timeline").get((request, response) => response.json({
+app.get("/timeline", (request, response) => response.json({
   timeline
 }))
 
-app.route("/units").get((request, response) => response.json({
+app.get("/units", (request, response) => response.json({
   units
 }))
 
@@ -50,7 +48,7 @@ let timeline = [
     description: "2018 e 2019 seguiram como anos de crescimento e passamos a atuar em mais de 60 especialidades médicas e oferecer mais de 3 mil tipos de serviços entre exames, oftalmologia, odontologia, fisioterapia, acupuntura e cirurgias de baixa complexidade. Temos parceria com mais de 20 hospitais para ajudar com os procedimentos cirúrgicos."
   },
   {
-    id: 1,
+    id: 7,
     year: "2020",
     description: "2020 foi um ano em que passamos pela pandemia, mas seguimos atendendo nossos pacientes em nossos centros médicos e lançamos novos serviços para que todos pudessem continuar cuidando da sua saúde. O mais importante deles foi a telemedicina. Disponibilizamos também a coleta domiciliar de exames em São Paulo e no Rio de Janeiro e passamos a enviar as receitas de medicamentos controlados aos pacientes, residentes da região metropolitana de São Paulo, que passaram por teleconsulta."
   },
