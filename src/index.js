@@ -19,39 +19,46 @@ app.get("/units", (request, response) => response.json({
 let timeline = [
   {
     id: 1,
+    title: "Primeiro centro médico inaugurado",
     year: "2011",
     description: "Em 2011, o primeiro centro médico foi inaugurado em Heliópolis, Zona Sul de São Paulo, com dez funcionários. A iniciativa foi muito bem recebida pela população da região e em 2013 o centro médico foi transferido para o Sacomã para aumentar a capacidade de atendimento."
   },
   {
     id: 2,
+    title: "Mais três centros médicos",
     year: "2014",
     description: "Em 2014, a empresa abriu mais três centros médicos, chegando a São Bernardo do Campo, Jabaquara e na Avenida Nove de Julho."
   },
   {
     id: 3,
+    title: "Ano de grande expansão",
     year: "2015",
     description: "2015 foi um ano de grande expansão e em 2016 já tínhamos 23 centros médicos pela cidade de São Paulo e no ABCD, Guarulhos, Santos e São Vicente."
   },
   {
     id: 4,
+    title: "Nossa primeira unidade de Pesquisa Clínica",
     year: "2016",
     description: "2016 também marcou o ano que abrimos nossa unidade de Pesquisa Clínica, iniciando um trabalho importantíssimo com o objetivo de possibilitar o acesso de nossos pacientes a terapias inovadoras, contribuir com o desenvolvimento e a performance nacional na condução de pesquisas clínicas no Brasil atraindo assim mais estudos para o país."
   },
   {
     id: 5,
+    title: "Abertura de 22 centros médicos, unidades no Rio de Janeiro e em Belo Horizonte",
     year: "2017",
     description: "2017 veio com a abertura de mais 22 centros médicos e completamos a marca de 45 endereços, todos perto de metrôs, shoppings e principais avenidas, incluindo ainda uma unidade no Rio de Janeiro e outra em Belo Horizonte."
   },
   {
     id: 6,
     year: "2019",
+    title: "Nesse ano passamos a atuar em mais de 60 especialidades médicas",
     description: "2018 e 2019 seguiram como anos de crescimento e passamos a atuar em mais de 60 especialidades médicas e oferecer mais de 3 mil tipos de serviços entre exames, oftalmologia, odontologia, fisioterapia, acupuntura e cirurgias de baixa complexidade. Temos parceria com mais de 20 hospitais para ajudar com os procedimentos cirúrgicos."
   },
   {
     id: 7,
     year: "2020",
+    title: "Ano que enfrentamos a pandemia com telemedicina e coleta domiciliar de exames.",
     description: "2020 foi um ano em que passamos pela pandemia, mas seguimos atendendo nossos pacientes em nossos centros médicos e lançamos novos serviços para que todos pudessem continuar cuidando da sua saúde. O mais importante deles foi a telemedicina. Disponibilizamos também a coleta domiciliar de exames em São Paulo e no Rio de Janeiro e passamos a enviar as receitas de medicamentos controlados aos pacientes, residentes da região metropolitana de São Paulo, que passaram por teleconsulta."
-  },
+  }
 ];
 
 let units = [
